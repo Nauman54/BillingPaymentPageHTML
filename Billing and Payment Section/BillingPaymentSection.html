@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Full Stack Web Development Course - Billing and Payment Section </title>
+    <link rel="stylesheet" href="BillingPaymentSection.css">
+</head>
+<body>
+        <div class="Divider">
+            <section class="Bill">
+                <h1 class="Header">Billing Address</h1>
+                <p>Full Name</p>
+                <input class="ValueField" id="Fullname" type="text" placeholder="Full Name" onclick="ValidateFullName()"/>
+                <p>Email</p>
+                <input class="ValueField" id="Email" type="text" placeholder="Email" onclick="ValidateEmail()"/>
+                <p>Address</p>
+                <input class="ValueField" id="Address" type="text" placeholder="Address" onclick="ValidateAddress()"/>
+                <p>City</p>
+                <input class="ValueField" id="City" type="text" placeholder="City" onclick="ValidateCity()"/>
+            </section>
+            <section class="Pay">
+                <h1 class="Header">Payment</h1>
+                <p>CNIC</p>
+                <input class="ValueField" id="CNIC" type="text" placeholder="12345-1234567-5" onclick="ValidateCNIC()"/>
+                <p>Name On Card</p>
+                <input class="ValueField" id="CardName" type="text" placeholder="Card Name" onclick="ValidateCardName()"/>
+                <p>Credit Card Number</p>
+                <input class="ValueField" id="CardNumber" type="text" placeholder="1111-2222-3333-4444" onclick="ValidateCardNumber()"/>
+                <p>Exp Month</p>
+                <input class="ValueField" id="ExpMonth" type="text" placeholder="Expiry Month" onclick="ValidateExpMonth()"/>
+            </section>
+         
+        </div>
+        <section class="PostalAdd">
+            <div>
+                <p>State</p>
+                <input class="Postal_ValueField" id="State" type="text" placeholder="State" onclick="ValidateState()"/>
+            </div>
+            <div>
+                <p>Zip</p>
+                <input class="Postal_ValueField" id="Zip" type="text" placeholder="Zip" onclick="ValidateZip()"/>
+            </div>
+            <div>
+                <p>Exp Year</p>
+                <input class="Postal_ValueField" id="ExpYear" type="text" placeholder="Exp Year" onclick="ValidateExpYear()"/>
+            </div>
+            <div>
+                <p>CVV</p>
+                <input class="Postal_ValueField" id="CVV" type="text" placeholder="CVV" onclick="ValidateCVV()"/>
+            </div>
+        </section>
+        <input type="checkbox"> 
+        <span>Shipping address same as billing</span>
+        <br>
+        <button id="myBtn" class="Btn" type="button">Continue To CheckOut</button>
+        <script src="BillingPaymentSection.js"></script>
+
+</body>
+</html>
